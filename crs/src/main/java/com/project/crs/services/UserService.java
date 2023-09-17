@@ -96,15 +96,15 @@ public class UserService {
 		adminUser.setRole(adminRoles);
 		userRepo.save(adminUser);
 		
-		User managerUser = new User();
-		managerUser.setFullName("ABC Manager1");
-		managerUser.setUserName("manager1");
-		managerUser.setUserpassword(getEncodedPassword("manager1@pwd"));
-		managerUser.setPincode("248001");
-		Set<Role> managerRoles = new HashSet<>();
-		managerRoles.add(managerRole);
-		managerUser.setRole(managerRoles);
-		userRepo.save(managerUser);
+//		User managerUser = new User();
+//		managerUser.setFullName("ABC Manager1");
+//		managerUser.setUserName("manager1");
+//		managerUser.setUserpassword(getEncodedPassword("manager1@pwd"));
+//		managerUser.setPincode("248001");
+//		Set<Role> managerRoles = new HashSet<>();
+//		managerRoles.add(managerRole);
+//		managerUser.setRole(managerRoles);
+//		userRepo.save(managerUser);
 	}
 	
 	public String getEncodedPassword(String password) {

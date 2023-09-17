@@ -20,49 +20,49 @@ public class ComplaintService {
 	@Autowired
 	public UserRepo userRepo;
 	
-	private static final String COMPLAINT_RAISED = "Raised";
+	private static final String COMPLAINT_RAISED = "RAISED";
 	
-	//mark status as resolved
-	public void markAsResolved(Integer complaintId) {
-		Complaint complaint = complaintRepo.findById(complaintId).get();
-
-		if (complaint != null) {
-			complaint.setComplaintStatus("Resolved");
-			complaintRepo.save(complaint);
-		}else {
-			//complaint.setComplaintStatus("Error");
-			complaintRepo.save(complaint);
-		}
-	}
-	
+//	//mark status as resolved
+//	public void markAsResolved(Integer complaintId) {
+//		Complaint complaint = complaintRepo.findById(complaintId).get();
+//
+//		if (complaint != null) {
+//			complaint.setComplaintStatus("RESOLVED");
+//			complaintRepo.save(complaint);
+//		}else {
+//			//complaint.setComplaintStatus("Error");
+//			complaintRepo.save(complaint);
+//		}
+//	}
+//	
 	
 	//mark status as in progress
-	public void markAsWip(Integer complaintId) {
-		Complaint complaint = new Complaint();
-		 complaint =  complaintRepo.findById(complaintId).get();
-
-		if (complaint != null) {
-			complaint.setComplaintStatus("Work in progress");
-			complaintRepo.save(complaint);
-		}else {
-			//complaint.setComplaintStatus("Error");
-			complaintRepo.save(complaint);
-		}
-	}
+//	public void markAsWip(Integer complaintId) {
+//		Complaint complaint = new Complaint();
+//		 complaint =  complaintRepo.findById(complaintId).get();
+//
+//		if (complaint != null) {
+//			complaint.setComplaintStatus("WORK IN PROGRESS");
+//			complaintRepo.save(complaint);
+//		}else {
+//			//complaint.setComplaintStatus("Error");
+//			complaintRepo.save(complaint);
+//		}
+//	}
 	
 	
 	//mark status as in review
-	public void markAsInReview(Integer complaintId) {
-		Complaint complaint = complaintRepo.findById(complaintId).get();
-
-		if (complaint != null) {
-			complaint.setComplaintStatus("In Review");
-			complaintRepo.save(complaint);
-		}else {
-			//complaint.setComplaintStatus("Error");
-			complaintRepo.save(complaint);
-		}
-	}
+//	public void markAsInReview(Integer complaintId) {
+//		Complaint complaint = complaintRepo.findById(complaintId).get();
+//
+//		if (complaint != null) {
+//			complaint.setComplaintStatus("ESCALATED");
+//			complaintRepo.save(complaint);
+//		}else {
+//			//complaint.setComplaintStatus("Error");
+//			complaintRepo.save(complaint);
+//		}
+//	}
 	
 	
 	

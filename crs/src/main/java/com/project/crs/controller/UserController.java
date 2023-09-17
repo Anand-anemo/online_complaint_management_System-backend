@@ -102,14 +102,15 @@ public class UserController {
 	}
 //	@GetMapping({"/engineers/forManager"})
 //	public List<User> getEngineerForManager(){
+//		
 //		String currentUser = JwtRequestFilter.CURRENT_USER;
 //		User user = userRepo.findById(currentUser).get();
 //		String pincode =user.getPincode();
 ////        return   this.getEngineer().stream().filter(engineer->engineer.getPincode().equals(pincode) )
 ////        		;
-//         return this.getAllUsers().stream().filter(usr->usr.getPincode()== pincode);
+//         List<User> result = this.getAllUsers().stream().filter(usr->usr.getPincode().equals("248001"));
 //				
-//		
+//		return result;
 //	}
 
 }

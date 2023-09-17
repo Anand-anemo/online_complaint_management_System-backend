@@ -55,24 +55,24 @@ public class ComplaintController {
 		return complaintService.getAllComplaintsForEngineer();
 	}
 	
-	//@PreAuthorize("hasAnyRole('Engineer')")
-	@GetMapping({"/markAsResolved/{complaintId}"})
-	public void markAsResolved(@PathVariable(name = "complaintId")Integer complaintId ) {     
-		complaintService.markAsResolved(complaintId);
-	}
-	
-	
-	//@PreAuthorize("hasAnyRole('Engineer')")
-	@GetMapping({"/markAsWip/{complaintId}"})
-	public void markAsWip(@PathVariable(name = "complaintId")Integer complaintId ) {     
-		complaintService.markAsWip(complaintId);
-	}
-	
-	//@PreAuthorize("hasAnyRole('Engineer')")
-	@GetMapping({"/markAsInReview/{complaintId}"})
-	public void markAsInReview(@PathVariable(name = "complaintId")Integer complaintId ) {     
-		complaintService.markAsInReview(complaintId);
-	}
+//	//@PreAuthorize("hasAnyRole('Engineer')")
+//	@PutMapping({"/markAsResolved/{complaintId}"})
+//	public void markAsResolved(@PathVariable(name = "complaintId")Integer complaintId ) {     
+//		complaintService.markAsResolved(complaintId);
+//	}
+//	
+//	
+//	//@PreAuthorize("hasAnyRole('Engineer')")
+//	@PutMapping({"/markAsWip/{complaintId}"})
+//	public void markAsWip(@PathVariable(name = "complaintId")Integer complaintId ) {     
+//		complaintService.markAsWip(complaintId);
+//	}
+//	
+//	//@PreAuthorize("hasAnyRole('Engineer')")
+//	@PutMapping({"/markAsEscalated/{complaintId}"})
+//	public void markAsInReview(@PathVariable(name = "complaintId")Integer complaintId ) {     
+//		complaintService.markAsInReview(complaintId);
+//	}
 	
 	@GetMapping("/getComplaintById/{complaintId}")
 	public Complaint getComplaintById(@PathVariable Integer complaintId) {
